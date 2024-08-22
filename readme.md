@@ -1,3 +1,21 @@
+## Previews:
+
+- [avocado](https://swiezastrona.pl/fruits-three/avocado.html)
+- [watermelon](https://swiezastrona.pl/fruits-three/watermelon.html)
+- [horned melon](https://swiezastrona.pl/fruits-three/horned_melon.html)
+- [coconut](https://swiezastrona.pl/fruits-three/coconut.html)
+- [Persimon](https://swiezastrona.pl/fruits-three/persimmon.html)
+- [Pineapple](https://swiezastrona.pl/fruits-three/pineapple.html)
+- [Mango](https://swiezastrona.pl/fruits-three/mango.html)
+- [Melon](https://swiezastrona.pl/fruits-three/melon.html)
+- [Lime](https://swiezastrona.pl/fruits-three/lime.html)
+- [Pomegranate](https://swiezastrona.pl/fruits-three/pomegranate.html)
+- [Green apple](https://swiezastrona.pl/fruits-three/green_apple.html)
+- [Orange](https://swiezastrona.pl/fruits-three/orange.html)
+- [Cherries](https://swiezastrona.pl/fruits-three/cherries.html)
+
+
+
 "Melon Kiwano" (https://skfb.ly/oGZTA) by M Parkinson is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Galia Melon" (https://skfb.ly/6R6FU) by blenderbirb is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -23,18 +41,3 @@
 "High Poly Avocado" (https://skfb.ly/oRWGE) by Kabalsab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Cherries" (https://skfb.ly/6VWuQ) by Carissa is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
-
-https://swiezastrona.pl/fruits-three/avocado.html
-https://swiezastrona.pl/fruits-three/watermelon.html
-https://swiezastrona.pl/fruits-three/horned_melon.html
-https://swiezastrona.pl/fruits-three/coconut.html
-https://swiezastrona.pl/fruits-three/persimmon.html
-https://swiezastrona.pl/fruits-three/pineapple.html
-https://swiezastrona.pl/fruits-three/mango.html
-https://swiezastrona.pl/fruits-three/melon.html
-https://swiezastrona.pl/fruits-three/lime.html
-https://swiezastrona.pl/fruits-three/pomegranate.html
-https://swiezastrona.pl/fruits-three/green_apple.html
-https://swiezastrona.pl/fruits-three/orange.html
-https://swiezastrona.pl/fruits-three/cherries.html
-
