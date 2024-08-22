@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>three.js webgl - GLTFloader</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <style>
+      body {
+        background: rgba(0, 0, 0, 0);
+        cursor: grab;
+        overflow: hidden;
+      }
+      body:active {
+        cursor: grabbing;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="module">
+      import * as THREE from "./scripts/three.module.js";
+      import { OrbitControls } from "./scripts/OrbitControls.js";
+      import { GLTFLoader } from "./scripts/GLTFLoader.js";
+      import { SceneEnvironment } from "./scripts/SceneEnvironment.js";
+
+      let camera, scene, renderer, controls;
+
+      init();
+
+      function init() {
+        const container = document.createElement("div");
+        document.body.appendChild(container);
+
+        camera = new THREE.PerspectiveCamera(
+          1,
+          window.innerWidth / window.innerHeight,
+          5,
+          -550
+        );
+        camera.position.set(0, 150, 200);
+
+        scene = new THREE.Scene();
+
+        // model
+
+        new GLTFLoader()
+          .setPath("./models/")
+          .load("melon_kiwano.glb", function (gltf) {
+            scene.add(gltf.scene);
+          });
+
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setAnimationLoop(animate);
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 0.75;
+        // Set the scene background to be transparent
+        renderer.setClearColor(0x000000, 0); // Second parameter is the alpha value (0 for fully transparent)
+        container.appendChild(renderer.domElement);
+
+        const environment = new SceneEnvironment(renderer);
+        const pmremGenerator = new THREE.PMREMGenerator(renderer);
+
+        //scene.background = new THREE.Color("#ffa80d");
+        scene.environment = pmremGenerator.fromScene(environment).texture;
+
+        controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.minDistance = 10;
+        controls.maxDistance = 10;
+        controls.target.set(0, 0.05, 0);
+        controls.enableZoom = false;
+        controls.update();
+
+        window.addEventListener("resize", onWindowResize);
+      }
+
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+
+      function animate() {
+        scene.rotation.y += 0.005;
+        controls.update(); // required if damping enabled
+
+        renderer.render(scene, camera);
+      }
+    </script>
+  </body>
+</html>
